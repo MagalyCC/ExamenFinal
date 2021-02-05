@@ -82,18 +82,18 @@ public void doRegistrar() {
 	c.setCedula(cedula);
 	c.setCelular(celular);
 	c.setValor(valor);
-ON.solicitudRecarga();
-/*ON.crearCuenta(c);
+ON.crearCuenta(c);
 try {
 	ON.registrarRecarga(c);
 } catch (Exception e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
-}*/
+}
 
 }
 
-
-
+public void solicitud() {
+	 sms = ON.solicitudRecarga();
+}
 
 }

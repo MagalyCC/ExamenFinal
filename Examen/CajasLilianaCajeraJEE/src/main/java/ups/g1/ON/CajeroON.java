@@ -72,12 +72,12 @@ public class CajeroON {
 	
 	
 	
-	public int solicitudRecarga() {
+	public String solicitudRecarga() {
 		URL wsdlURL = ServiciosService.WSDL_LOCATION;
 		ServiciosService ss = new ServiciosService(wsdlURL, SERVICE_NAME);
         Servicios port = ss.getServiciosPort();  
         int numero = port.solicitud();
         System.out.print(numero);
-        return numero;
+        return numero+"";
 	}
 }
