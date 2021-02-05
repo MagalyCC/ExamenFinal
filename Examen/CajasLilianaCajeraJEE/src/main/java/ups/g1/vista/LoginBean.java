@@ -83,12 +83,13 @@ public void doRegistrar() {
 	c.setCelular(celular);
 	c.setValor(valor);
 ON.crearCuenta(c);
-try {
+sms = ON.solicitudRecarga();
+/*try {
 	ON.registrarRecarga(c);
 } catch (Exception e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
-}
+}*/
 
 }
 
