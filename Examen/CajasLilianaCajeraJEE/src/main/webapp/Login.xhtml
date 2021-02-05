@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<h1>RECARGAS</h1>
+	<h:form>
+	<h:messages autoUpdate="true"/>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="cedula" />
+			<h:inputText value="#{loginBean.cedula}" required="true"/>
+			<h:outputLabel value="num celular" />
+			<h:inputText value="#{loginBean.celular}" required="true"/>
+			<h:outputLabel value="valor" />
+			<h:inputText value="#{loginBean.valor}" required="true"/>
+			<h:outputLabel value="" />
+			
+			<h:commandButton action="#{loginBean.doRegistrar}"
+				value="Recarga" />
+				
+			
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>
